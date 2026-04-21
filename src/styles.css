@@ -140,5 +140,24 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .glow-border {
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 30%, transparent),
+                0 10px 40px -10px color-mix(in oklab, var(--color-primary) 40%, transparent);
   }
 }
