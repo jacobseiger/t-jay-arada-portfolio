@@ -64,7 +64,7 @@ export function HexRain() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 -z-10 h-full w-full opacity-30 dark:opacity-40 pointer-events-none"
+      className="fixed inset-0 z-0 h-full w-full opacity-60 dark:opacity-70 pointer-events-none"
       aria-hidden="true"
     />
   );

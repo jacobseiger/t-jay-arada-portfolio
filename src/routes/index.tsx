@@ -35,16 +35,18 @@ function Index() {
     <ThemeProvider>
       <div className="relative min-h-screen bg-background text-foreground">
         <HexRain />
-        <Navbar />
-        <main>
+        <div className="relative z-10">
+          <Navbar />
+          <main>
           <Hero />
           <About />
           <Skills />
           <Projects />
           <Experience />
           <Contact />
-        </main>
-        <Footer />
+          </main>
+          <Footer />
+        </div>
       </div>
     </ThemeProvider>
   );
