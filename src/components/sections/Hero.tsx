@@ -5,7 +5,7 @@ import portrait from "@/assets/portrait.jpg";
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-24 pb-16 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-[1.3fr_1fr] gap-12 items-center w-full">
+      <div className="max-w-[1400px] mx-auto grid md:grid-cols-[1.3fr_1fr] gap-12 items-center w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

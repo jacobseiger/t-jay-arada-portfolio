@@ -70,7 +70,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-24 px-6 relative">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <SectionHeader index="03" title="Projects" />
 
         <div className="flex flex-wrap gap-2 mb-10">

@@ -51,7 +51,7 @@ export function Experience() {
 
   return (
     <section id="experience" className="py-24 px-6 relative">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-[1280px] mx-auto">
         <SectionHeader index="04" title="Experience" />
 
         <div ref={ref} className="relative pl-8 md:pl-12">

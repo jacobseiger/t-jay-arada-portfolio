@@ -61,7 +61,7 @@ const skills: Skill[] = [
 export function Skills() {
   return (
     <section id="skills" className="py-24 px-6 relative">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <SectionHeader index="02" title="Skills" />
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-4">
           {skills.map((s) => (
