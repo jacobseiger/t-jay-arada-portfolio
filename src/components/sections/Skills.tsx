@@ -1,12 +1,12 @@
 import {
   SiJavascript, SiTypescript, SiNodedotjs, SiPython, SiRuby, SiRubyonrails,
-  SiPhp, SiSharp, SiGo, SiPostgresql, SiReact, SiNextdotjs, SiNestjs, SiNuxtdotjs,
+  SiPhp, SiSharp, SiGo, SiPostgresql, SiReact, SiNextdotjs, SiNestjs, SiNuxt,
   SiDjango, SiDotnet, SiAngular, SiVuedotjs, SiTailwindcss, SiLaravel, SiGraphql,
-  SiMysql, SiMongodb, SiSqlite, SiWordpress, SiAmazon, SiGooglecloud, SiDocker,
+  SiMysql, SiMongodb, SiSqlite, SiWordpress, SiGooglecloud, SiDocker,
   SiIonic, SiFlutter, SiGithub, SiSlack, SiJira, SiFigma, SiKubernetes, SiTerraform,
   SiNotion,
 } from "react-icons/si";
-import { FaJava, FaDatabase } from "react-icons/fa";
+import { FaJava, FaDatabase, FaAws } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
 import { SectionHeader } from "./About";
 import type { IconType } from "react-icons";
@@ -28,7 +28,7 @@ const skills: Skill[] = [
   { name: "React", Icon: SiReact, color: "#61DAFB" },
   { name: "Next.js", Icon: SiNextdotjs, color: "#7B7B7B" },
   { name: "NestJS", Icon: SiNestjs, color: "#E0234E" },
-  { name: "Nuxt.js", Icon: SiNuxtdotjs, color: "#00DC82" },
+  { name: "Nuxt.js", Icon: SiNuxt, color: "#00DC82" },
   { name: "Django", Icon: SiDjango, color: "#0C4B33" },
   { name: ".Net", Icon: SiDotnet, color: "#512BD4" },
   { name: "ASP.NET", Icon: SiDotnet, color: "#5C2D91" },
@@ -43,7 +43,7 @@ const skills: Skill[] = [
   { name: "MongoDB", Icon: SiMongodb, color: "#47A248" },
   { name: "SQLite", Icon: SiSqlite, color: "#003B57" },
   { name: "WordPress", Icon: SiWordpress, color: "#21759B" },
-  { name: "AWS", Icon: SiAmazon, color: "#FF9900" },
+  { name: "AWS", Icon: FaAws, color: "#FF9900" },
   { name: "Azure", Icon: VscAzure, color: "#0078D4" },
   { name: "GCP", Icon: SiGooglecloud, color: "#4285F4" },
   { name: "Docker", Icon: SiDocker, color: "#2496ED" },
