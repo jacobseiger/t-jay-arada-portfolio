@@ -26,7 +26,7 @@ export function Contact() {
     setForm({ ...form, [k]: e.target.value });
 
   return (
-    <section id="contact" className="py-24 px-6 relative">
+    <section id="contact" className="py-28 px-6 lg:px-12 relative">
       <div className="max-w-[1400px] mx-auto">
         <SectionHeader index="05" title="Contact" />
 

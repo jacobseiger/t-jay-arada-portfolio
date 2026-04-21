@@ -50,7 +50,7 @@ export function Experience() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="experience" className="py-24 px-6 relative">
+    <section id="experience" className="py-28 px-6 lg:px-12 relative">
       <div className="max-w-[1280px] mx-auto">
         <SectionHeader index="04" title="Experience" />
 

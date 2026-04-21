@@ -45,7 +45,7 @@ export function Navbar() {
         scrolled ? "backdrop-blur-md bg-background/70 border-b border-border/60" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-[1400px] mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
         <button onClick={() => go("home")} className="font-bold tracking-tight text-lg">
           <span className="text-gradient">{"<"}TJ{"/>"}</span>
         </button>
