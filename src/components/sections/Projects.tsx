@@ -69,8 +69,8 @@ export function Projects() {
   const visible = showAll ? filtered : filtered.slice(0, 6);
 
   return (
-    <section id="projects" className="py-24 px-6 relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-28 px-6 lg:px-12 relative">
+      <div className="max-w-[1400px] mx-auto">
         <SectionHeader index="03" title="Projects" />
 
         <div className="flex flex-wrap gap-2 mb-10">

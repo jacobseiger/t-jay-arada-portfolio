@@ -14,8 +14,8 @@ export function About() {
   const [tab, setTab] = useState<"about" | "education">("about");
 
   return (
-    <section id="about" className="py-24 px-6 relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="py-28 px-6 lg:px-12 relative">
+      <div className="max-w-[1400px] mx-auto">
         <SectionHeader index="01" title="About" />
 
         <div className="inline-flex p-1 rounded-lg bg-secondary/60 border border-border/60 mb-10">

@@ -1,27 +1,28 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import portrait from "@/assets/portrait.jpg";
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-24 pb-16 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-[1.3fr_1fr] gap-12 items-center w-full">
+    <section id="home" className="relative min-h-screen flex items-center pt-24 pb-16 px-6 lg:px-12">
+      <div className="max-w-[1400px] mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
+          className="max-w-5xl"
         >
-          <p className="font-mono text-sm text-primary mb-4">$ whoami</p>
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6">
-            T Jay <span className="text-gradient">Arada</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-light">
-            Senior Software Engineer building reliable, fast, and well-architected products.
+          <p className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-6">
+            Senior Software Engineer
           </p>
-          <p className="text-base text-muted-foreground/90 max-w-xl mb-8 leading-relaxed">
-            Close to a decade shipping production systems across e-commerce, fintech,
-            digital health, and B2B SaaS. Based in the Philippines, working remotely
-            with U.S. teams.
+          <h1 className="font-display text-[clamp(3rem,9vw,8.5rem)] font-medium leading-[0.95] mb-8 tracking-tight">
+            T Jay <span className="italic text-gradient-luxe">Arada</span>
+          </h1>
+          <div className="h-px w-24 bg-gradient-to-r from-accent to-transparent mb-8" />
+          <p className="text-xl md:text-2xl text-foreground/85 mb-6 font-light max-w-3xl leading-relaxed">
+            Building reliable, fast, and well architected software products with the calm of someone who has shipped them at 2 AM.
+          </p>
+          <p className="text-base text-muted-foreground max-w-2xl mb-10 leading-[1.8]">
+            Close to a decade of production work across e commerce, fintech, digital health, and B2B SaaS. Based in the Philippines, working remotely with U.S. teams.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <a
@@ -30,7 +31,7 @@ export function Hero() {
                 e.preventDefault();
                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium hover:opacity-90 transition glow-border"
+              className="inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full font-medium hover:bg-accent hover:text-accent-foreground transition-all duration-300 text-sm tracking-wide"
             >
               Get in touch <ArrowDown className="h-4 w-4" />
             </a>
@@ -38,7 +39,7 @@ export function Hero() {
               href="https://github.com/amnweb"
               target="_blank"
               rel="noreferrer"
-              className="p-3 rounded-md border border-border hover:border-primary hover:text-primary transition"
+              className="p-3.5 rounded-full border border-border/80 hover:border-accent hover:text-accent transition-colors"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
@@ -47,35 +48,19 @@ export function Hero() {
               href="https://www.linkedin.com/in/t-jay-arada"
               target="_blank"
               rel="noreferrer"
-              className="p-3 rounded-md border border-border hover:border-primary hover:text-primary transition"
+              className="p-3.5 rounded-full border border-border/80 hover:border-accent hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
               href="mailto:t.arada.karbon@outlook.com"
-              className="p-3 rounded-md border border-border hover:border-primary hover:text-primary transition"
+              className="p-3.5 rounded-full border border-border/80 hover:border-accent hover:text-accent transition-colors"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
             </a>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="relative justify-self-center"
-        >
-          <div className="absolute -inset-4 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-3xl blur-2xl" />
-          <img
-            src={portrait}
-            alt="T Jay Arada portrait illustration"
-            width={400}
-            height={400}
-            className="relative rounded-3xl border border-border/60 w-72 h-72 md:w-80 md:h-80 object-cover"
-          />
         </motion.div>
       </div>
     </section>
